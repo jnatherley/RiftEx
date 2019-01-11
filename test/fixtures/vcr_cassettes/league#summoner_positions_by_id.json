@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "recall",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/league/v4/positions/by-summoner/***"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"leagueId\":\"ae51cf10-890c-11e8-afc2-c81f66dacb22\",\"leagueName\":\"LeBlanc's Zealots\",\"tier\":\"GOLD\",\"queueType\":\"RANKED_SOLO_5x5\",\"rank\":\"IV\",\"summonerId\":\"***\",\"summonerName\":\"FooFighter\",\"leaguePoints\":100,\"wins\":188,\"losses\":191,\"miniSeries\":{\"target\":2,\"wins\":1,\"losses\":0,\"progress\":\"WNN\"}}]",
+      "headers": {
+        "Cache-Control": "public, max-age=3600",
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Fri, 11 Jan 2019  21:38:04 GMT",
+        "Vary": "Accept-Encoding",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "Content-Length": "338",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

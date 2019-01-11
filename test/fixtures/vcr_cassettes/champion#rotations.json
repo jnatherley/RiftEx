@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "recall",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"freeChampionIds\":[9,20,33,37,38,40,41,58,61,96,98,119,122,412],\"freeChampionIdsForNewPlayers\":[18,81,92,141,37,238,19,45,25,64],\"maxNewPlayerLevel\":10}",
+      "headers": {
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Fri, 11 Jan 2019  21:38:08 GMT",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "153",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
