@@ -1,21 +1,23 @@
-# RiotApiClient
+# RiftEx
 
-**TODO: Add description**
+**RiftEx**
+
+An Elixir Client for RiotGames League of Leagues API. Heavily inspired by [Tentacat](https://github.com/edgurgel/tentacat). Documentation coming soon.
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `riot_api_client` to your list of dependencies in `mix.exs`:
+by adding `rift_ex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:riot_api_client, "~> 0.1.0"}
+    {:rift_ex, "~> 0.1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/riot_api_client](https://hexdocs.pm/riot_api_client).
+be found at [https://hexdocs.pm/rift_ex](https://hexdocs.pm/riot_api_client).
 

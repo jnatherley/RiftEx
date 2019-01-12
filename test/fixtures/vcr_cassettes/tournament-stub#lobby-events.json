@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://americas.api.riotgames.com/lol/tournament-stub/v4/lobby-events/by-code/5423"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"eventList\":[{\"timestamp\":\"1234567890000\",\"eventType\":\"PracticeGameCreatedEvent\",\"summonerId\":\"_-e3A6JoMcmwSZm9bL9f1-LfZojsFUVJyfRWCbil6R8haQ8\"},{\"timestamp\":\"1234567890000\",\"eventType\":\"PlayerJoinedGameEvent\",\"summonerId\":\"_-e3A6JoMcmwSZm9bL9f1-LfZojsFUVJyfRWCbil6R8haQ8\"},{\"timestamp\":\"1234567890000\",\"eventType\":\"PlayerSwitchedTeamEvent\",\"summonerId\":\"_-e3A6JoMcmwSZm9bL9f1-LfZojsFUVJyfRWCbil6R8haQ8\"},{\"timestamp\":\"1234567890000\",\"eventType\":\"PlayerQuitGameEvent\",\"summonerId\":\"_-e3A6JoMcmwSZm9bL9f1-LfZojsFUVJyfRWCbil6R8haQ8\"},{\"timestamp\":\"1234567890000\",\"eventType\":\"ChampSelectStartedEvent\",\"summonerId\":null},{\"timestamp\":\"1234567890000\",\"eventType\":\"GameAllocationStartedEvent\",\"summonerId\":null},{\"timestamp\":\"1234567890000\",\"eventType\":\"GameAllocatedToLsmEvent\",\"summonerId\":null}]}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "GET, POST, DELETE, PUT",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019 18:26:46 GMT",
+        "Vary": "Accept-Encoding",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "Content-Length": "795",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

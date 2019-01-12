@@ -1,6 +1,6 @@
-defmodule RiotApiClientTest.Summoner do
-  alias RiotApiClient.Summoner.{V4}
-  use RiotApiClient.CassetteCase, async: false
+defmodule RiftExTest.Summoner do
+  alias RiftEx.Summoner.{V4}
+  use RiftEx.CassetteCase, async: false
 
   test "get_summoner_by_account_id", ctx do
     use_cassette "summoner#by_account_id" do

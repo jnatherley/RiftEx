@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :riot_api_client, key: :value
+#     config :rift_ex, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:riot_api_client, :key)
+#     Application.get_env(:rift_ex, :key)
 #
 # You can also configure a 3rd-party app:
 #

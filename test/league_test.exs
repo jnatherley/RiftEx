@@ -1,8 +1,8 @@
-defmodule RiotApiClientTest.League do
-  # import RiotApiClient.League
-  import RiotApiClient.League
+defmodule RiftExTest.League do
+  # import RiftEx.League
+  import RiftEx.League
 
-  use RiotApiClient.CassetteCase, async: false
+  use RiftEx.CassetteCase, async: false
 
   @queue "RANKED_SOLO_5x5"
 

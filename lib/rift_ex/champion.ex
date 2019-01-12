@@ -1,7 +1,7 @@
-defmodule RiotApiClient.Champion do
+defmodule RiftEx.Champion do
 
-  import RiotApiClient
-  alias RiotApiClient.Client
+  import RiftEx
+  alias RiftEx.Client
 
   @path "lol/platform/v3"
 

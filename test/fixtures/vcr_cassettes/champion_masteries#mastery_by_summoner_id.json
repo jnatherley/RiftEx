@@ -3,7 +3,7 @@
     "request": {
       "body": "\"\"",
       "headers": {
-        "User-agent": "recall",
+        "User-agent": "RiftEx",
         "X-Riot-Token": "***"
       },
       "method": "get",
@@ -16,10 +16,10 @@
       "body": "{\"championId\":68,\"championLevel\":5,\"championPoints\":78869,\"lastPlayTime\":1537042681000,\"championPointsSinceLastLevel\":57269,\"championPointsUntilNextLevel\":0,\"chestGranted\":true,\"tokensEarned\":2,\"summonerId\":\"***\"}",
       "headers": {
         "Content-Type": "application/json;charset=utf-8",
-        "Date": "Fri, 11 Jan 2019  21:38:08 GMT",
+        "Date": "Sat, 12 Jan 2019  16:55:53 GMT",
         "Vary": "Accept-Encoding",
         "X-App-Rate-Limit": "20:1,100:120",
-        "transfer-encoding": "chunked",
+        "Content-Length": "257",
         "Connection": "keep-alive"
       },
       "status_code": 200,

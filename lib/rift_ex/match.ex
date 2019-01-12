@@ -1,6 +1,6 @@
-defmodule RiotApiClient.Match do
+defmodule RiftEx.Match do
 
-  use RiotApiClient.Utils.Versioning, path: "lol/match"
+  use RiftEx.Utils.Versioning, path: "lol/match"
 
   def get_match(client \\ %Client{}, match_id, params \\ [], options \\ []) do
     get("/matches/#{match_id}", client, params, options)

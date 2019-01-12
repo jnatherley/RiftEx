@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/***"
+    },
+    "response": {
+      "binary": false,
+      "body": "[]",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Cache-Control": "no-cache",
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019 17:11:16 GMT",
+        "Expires": "Thu, 01 Jan 1970 00:00:00 UTC",
+        "Pragma": "No-cache",
+        "Via": "1.1 varnish",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "X-Varnish": "2275510247",
+        "Content-Length": "57",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

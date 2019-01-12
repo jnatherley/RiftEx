@@ -5,6 +5,7 @@ test_puuid = "TEST_RIOT_PUUID"
 test_account_id = "TEST_ACCOUNT_ID"
 test_account_name = "TEST_RIOT_SUMMONER_NAME"
 test_api_key = "TEST_API_KEY"
+test_endpoint = "https://euw1.api.riotgames.com"
 
 config :exvcr, [
   vcr_cassette_library_dir: "test/fixtures/vcr_cassettes",
@@ -27,8 +28,9 @@ config :exvcr, [
   ]
 ]
 
-config :riot_api_client,
+config :rift_ex,
   api_key: test_api_key,
+  endpoint: test_endpoint,
   test_account_name: test_account_name,
   test_account_id: test_account_id,
   test_id: test_id,

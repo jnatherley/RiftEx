@@ -1,0 +1,44 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/status/v3/shard-data"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"name\":\"EU West\",\"slug\":\"euw\",\"locales\":[\"en_GB\",\"fr_FR\",\"it_IT\",\"es_ES\",\"de_DE\"],\"hostname\":\"prod.euw1.lol.riotgames.com\",\"region_tag\":\"eu\",\"services\":[{\"name\":\"Game\",\"slug\":\"game\",\"status\":\"online\",\"incidents\":[{\"id\":10775,\"active\":true,\"created_at\":\"2019-01-09T18:28:34.708Z\",\"updates\":[{\"id\":\"5c363d527639da0100f06948\",\"author\":\"\",\"content\":\"We are currently looking into reports of clients displaying the wrong level of tier rewards from season end. This will not affect your current placement or matchmaking.\",\"severity\":\"info\",\"created_at\":\"2019-01-09T18:28:34.708Z\",\"updated_at\":\"2019-01-09T18:28:34.708Z\",\"translations\":[{\"locale\":\"fr_FR\",\"heading\":\"Récompenses classées\",\"content\":\"Nous sommes conscients d'un problème d'affichage du niveau et du palier de fin de saison dans le client, et nous travaillons à le corriger. Votre placement et votre matchmaking ne seront pas affectés.\"},{\"locale\":\"de_DE\",\"heading\":\"Ranglistenbelohnungen\",\"content\":\"Wir gehen gerade Berichten nach, laut denen im Client die falsche Klasse bei den Belohnungen zum Saisonende angezeigt werden. Dieser Vorgang hat keine Auswirkungen auf deinen aktuellen Rang oder die Gegnersuche.\"},{\"locale\":\"it_IT\",\"heading\":\"Ricompense classificate\",\"content\":\"Stiamo analizzando delle segnalazioni secondo cui il client mostrerebbe il livello errato di ricompense per il grado a fine stagione. Il problema non influenza in alcun modo il matchmaking o il vostro piazzamento attuale.\"},{\"locale\":\"es_ES\",\"heading\":\"Recompensas de clasificatoria\",\"content\":\"Estamos investigando informes sobre clientes que muestran el nivel equivocado de recompensas por nivel del final de la temporada. Esto no afectará a vuestro posicionamiento actual ni a los emparejamientos.\"}]}]},{\"id\":10811,\"active\":true,\"created_at\":\"2019-01-11T17:34:54.731Z\",\"updates\":[{\"id\":\"5c38d3be7639da0100f6e972\",\"author\":\"\",\"content\":\"We're aware of an issue where rewinding or interacting with the timeline in a replay can cause a crash. We're working on a fix.\",\"severity\":\"info\",\"created_at\":\"2019-01-11T17:34:54.731Z\",\"updated_at\":\"2019-01-11T17:34:54.731Z\",\"translations\":[{\"locale\":\"fr_FR\",\"heading\":\"Problèmes avec les rediffusions\",\"content\":\"Nous sommes conscients d'un problème qui affecte les rediffusions lorsque vous revenez en arrière, et nous travaillons à le corriger.\"},{\"locale\":\"de_DE\",\"heading\":\"Probleme mit den Wiederholungen\",\"content\":\"Wir wissen, dass es ein Problem gibt, durch das es beim Zurückspulen oder Interagieren mit der Zeitlinie in Wiederholungen zu Abstürzen kommen kann. Wir arbeiten gerade an einer Lösung für dieses Problem.\"},{\"locale\":\"it_IT\",\"heading\":\"Problemi con i replay\",\"content\":\"Siamo a conoscenza di un problema che può mandare il gioco in crash se si riavvolge o si interagisce con la timeline durante la visualizzazione di un replay e stiamo lavorando a una soluzione.\"},{\"locale\":\"es_ES\",\"heading\":\"Problema con las repeticiones\",\"content\":\"Sabemos que hay un problema que puede hacer que se cuelgue el juego al rebobinar o interactuar con la línea temporal en una repetición. Estamos trabajando para solucionarlo.\"}]}]}]},{\"name\":\"Store\",\"slug\":\"store\",\"status\":\"online\",\"incidents\":[{\"id\":10545,\"active\":true,\"created_at\":\"2018-12-07T05:20:56.043Z\",\"updates\":[{\"id\":\"5c0a03383f2b830100008cb9\",\"author\":\"\",\"content\":\"We're aware of a problem causing region transfers to fail, and have disabled them while we work on a fix.\",\"severity\":\"info\",\"created_at\":\"2018-12-07T05:20:56.043Z\",\"updated_at\":\"2018-12-07T05:20:56.043Z\",\"translations\":[{\"locale\":\"fr_FR\",\"heading\":\"Problèmes liés aux transferts de comptes\",\"content\":\"Nous sommes conscients du problème qui empêche les transferts de régions, et nous avons désactivé cette fonctionnalité pendant que nous travaillons à le corriger.\"},{\"locale\":\"de_DE\",\"heading\":\"Probleme mit Kontotransfers\",\"content\":\"Uns ist bekannt, dass es momentan Probleme mit dem Regionstransfer gib. Wir haben Regionstransfere vorübergehend deaktiviert, während wir an einer Lösung arbeiten.\"},{\"locale\":\"it_IT\",\"heading\":\"Problemi con i trasferimenti dell'account\",\"content\":\"Siamo a conoscenza di un problema che impedisce i trasferimenti regionali degli account e li abbiamo disattivati per lavorare a una soluzione.\"},{\"locale\":\"es_ES\",\"heading\":\"Problemas con la transferencia de cuenta.\",\"content\":\"Somos conscientes de un problema que impide cambiar de región, y estamos trabajando en una solución.\"}]}]}]},{\"name\":\"Website\",\"slug\":\"website\",\"status\":\"online\",\"incidents\":[]},{\"name\":\"Client\",\"slug\":\"client\",\"status\":\"online\",\"incidents\":[{\"id\":10512,\"active\":true,\"created_at\":\"2018-12-05T23:58:44.391Z\",\"updates\":[{\"id\":\"5c0866343f2b830100f97cb6\",\"author\":\"\",\"content\":\"We are aware of issues with League Voice on Mac OS Mojave and are currently investigating.\",\"severity\":\"info\",\"created_at\":\"2018-12-05T23:58:44.391Z\",\"updated_at\":\"2018-12-05T23:58:44.391Z\",\"translations\":[{\"locale\":\"fr_FR\",\"heading\":\"Problèmes avec Mac OS\",\"content\":\"Nous sommes conscients des problèmes qui affectent League Voice sur Mac OS Mojave, et nous travaillons à les corriger.\"},{\"locale\":\"de_DE\",\"heading\":\"Probleme mit Mac OS\",\"content\":\"Wir wissen, dass es auf Mac OS Mojave Probleme mit dem League-Sprachchat gibt, und stellen gerade Nachforschungen an.\"},{\"locale\":\"it_IT\",\"heading\":\"Problemi con Mac OS\",\"content\":\"Siamo a conoscenza dei problemi riscontrati con la chat vocale di LoL su Mac OS Mojave e stiamo investigando.\\n\"},{\"locale\":\"es_ES\",\"heading\":\"Problemas en Mac OS\",\"content\":\"Somos conscientes de que existen problemas con el chat de voz de LoL en Mac OS Mojave y estamos investigándolo.\"}]}]}]}]}",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Max-Age": "3000",
+        "Age": "2",
+        "Cache-Control": "public, max-age=2",
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019 17:05:55 GMT",
+        "ETag": "\"e55397d2c9d8814e96785217e96439a6\"",
+        "Last-Modified": "Fri, 11 Jan 2019 17:34:56 GMT",
+        "Strict-Transport-Security": "max-age=900",
+        "Via": "1.1 varnish",
+        "x-amz-id-2": "2Mk4QYdDH4zFHCkp5OclujDX0plTowneRpNa5AARr6/PMlaQboQZIUYpRJD11HXVs+cmCP1MbFc=",
+        "x-amz-request-id": "98BF8435396654BC",
+        "X-Cache": "HIT, HIT",
+        "X-Cache-Hits": "1, 1",
+        "X-RiotGames-CDN": "Fastly",
+        "X-Served-By": "cache-iad2148-IAD, cache-lcy19249-LCY",
+        "X-Timer": "S1547312756.903762,VS0,VE1",
+        "Content-Length": "5668",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

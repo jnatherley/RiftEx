@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"teamSize\":5,\"spectatorType\":\"ALL\",\"pickType\":\"ALL_RANDOM\",\"mapType\":\"HOWLING_ABYSS\"}",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://americas.api.riotgames.com/lol/tournament-stub/v4/codes"
+    },
+    "response": {
+      "binary": false,
+      "body": "[\"EUW5423-TOURNAMENTCODE0001\"]",
+      "headers": {
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "GET, POST, DELETE, PUT",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019 18:24:40 GMT",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "Content-Length": "30",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

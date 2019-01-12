@@ -1,9 +1,12 @@
-defmodule RiotApiClient do
-  alias RiotApiClient.Client
+defmodule RiftEx do
+  alias RiftEx.Client
   alias Poison
   use HTTPoison.Base
 
   @user_agent [{"User-agent", "RiftEx"}]
+
+  # Heavily inspired by Tentacat by edgurgel
+  # https://github.com/edgurgel/tentacat
 
   @spec process_response_body(binary) :: term
   def process_response_body(""), do: nil
@@ -12,15 +15,20 @@ defmodule RiotApiClient do
     do: {status_code, body, resp}
 
   def get(path, client \\ %Client{}, query_params, options) do
-    request_url = client
-      |> url(client.endpoint <> path, query_params, options)
+    request_url = url(client, client.endpoint <> path, query_params, options)
 
     api_request(:get, request_url, "", authorization_header(client, @user_agent), [])
   end
 
+  def post(path, client \\ %Client{}, body, query_params, options) do
+    request_url = url(client, client.endpoint <> path, query_params, options)
+
+    api_request(:post, request_url, body, authorization_header(client, @user_agent), [])
+  end
+
+
   def api_request(method, url, body \\ "", headers, options \\ []) do
-    method
-    |> request!(url, Poison.encode!(body), headers, options)
+    request!(method, url, Poison.encode!(body), headers, options)
   end
 
   def authorization_header(%Client{api_key: api_key}, headers \\ []) do
@@ -32,8 +40,13 @@ defmodule RiotApiClient do
     combine_params_into_uri(path, params)
   end
 
-  def url(%Client{api_key: _api_key}, path, params, _options) do
+  def url(%Client{api_key: _api_key}, path, params, _options) when is_list(params) do
     params = List.keydelete(params, :api_key, 0)
+    combine_params_into_uri(path, params)
+  end
+
+  def url(%Client{api_key: _api_key}, path, params, _options) when is_map(params) do
+    params = Map.delete(params, :api_key)
     combine_params_into_uri(path, params)
   end
 
@@ -58,11 +71,17 @@ defmodule RiotApiClient do
       true ->
         %{}
     end
+    query = for {key, value} <- params, into: query do
+      if is_atom(key) do
+        {Atom.to_string(key), value}
+      else
+        {key, value}
+      end
+    end
 
-    query = for {key, value} <- params, into: query, do: {Atom.to_string(key), value}
+    query = query |> Map.to_list |> URI.encode_query()
 
-    uri
-    |> Map.put(:query, query |> Map.to_list |> URI.encode_query())
+    %URI{uri | query: query}
   end
 
 end

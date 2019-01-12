@@ -1,0 +1,29 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/champion-mastery/v4/scores/by-summoner/***"
+    },
+    "response": {
+      "binary": false,
+      "body": "224",
+      "headers": {
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019  16:55:53 GMT",
+        "Vary": "Accept-Encoding",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "Content-Length": "3",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

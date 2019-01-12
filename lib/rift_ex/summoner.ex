@@ -1,10 +1,10 @@
-defmodule RiotApiClient.Summoner do
+defmodule RiftEx.Summoner do
 
-  use RiotApiClient.Utils.Versioning, path: "lol/summoner"
+  use RiftEx.Utils.Versioning, path: "lol/summoner"
 
   defmodule V4 do
-    alias RiotApiClient.Summoner, as: S
-    import RiotApiClient, only: [get: 4]
+    alias RiftEx.Summoner, as: S
+    import RiftEx, only: [get: 4]
 
     @version [version: :v4]
 
@@ -23,7 +23,7 @@ defmodule RiotApiClient.Summoner do
   end
 
   defmodule V3 do
-    alias RiotApiClient.Summoner, as: S
+    alias RiftEx.Summoner, as: S
 
     @version [version: :v3]
 

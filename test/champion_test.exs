@@ -1,7 +1,7 @@
-defmodule RiotApiClientTest.Champion do
-  import RiotApiClient.Champion
+defmodule RiftExTest.Champion do
+  import RiftEx.Champion
 
-  use RiotApiClient.CassetteCase, async: false
+  use RiftEx.CassetteCase, async: false
 
   setup do
     ExVCR.Config.filter_sensitive_data("3873121536", "999")

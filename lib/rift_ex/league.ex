@@ -1,9 +1,9 @@
-defmodule RiotApiClient.League do
+defmodule RiftEx.League do
 
-  use RiotApiClient.Utils.Versioning, path: "lol/league"
+  use RiftEx.Utils.Versioning, path: "lol/league"
 
   defmodule V4 do
-    alias RiotApiClient.League, as: L
+    alias RiftEx.League, as: L
 
     @version [version: :v4]
 
@@ -26,7 +26,7 @@ defmodule RiotApiClient.League do
   end
 
   defmodule V3 do
-    alias RiotApiClient.League, as: L
+    alias RiftEx.League, as: L
 
     @version [version: :v3]
 

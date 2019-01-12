@@ -1,0 +1,29 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "RiftEx",
+        "X-Riot-Token": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://euw1.api.riotgames.com/lol/platform/v4/third-party-code/by-summoner/***"
+    },
+    "response": {
+      "binary": false,
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json;charset=utf-8",
+        "Date": "Sat, 12 Jan 2019  17:19:39 GMT",
+        "Vary": "Accept-Encoding",
+        "X-App-Rate-Limit": "20:1,100:120",
+        "Content-Length": "0",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,20 +1,20 @@
-defmodule RiotApiClient.CassetteCase do
+defmodule RiftEx.CassetteCase do
   use ExUnit.CaseTemplate
-  alias RiotApiClient.Client
+  alias RiftEx.Client
 
   using do
     quote do
 
       use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
-      @base_url "https://euw1.api.riotgames.com"
+      @base_url Application.fetch_env!(:rift_ex, :endpoint)
 
       setup_all do
         HTTPoison.start
-        apikey = Application.fetch_env!(:riot_api_client, :api_key)
+        apikey = Application.fetch_env!(:rift_ex, :api_key)
         endpoint = @base_url
-        account_name = Application.fetch_env!(:riot_api_client, :test_account_name)
-        account_id = Application.fetch_env!(:riot_api_client, :test_account_id)
-        summoner_id = Application.fetch_env!(:riot_api_client, :test_id)
+        account_name = Application.fetch_env!(:rift_ex, :test_account_name)
+        account_id = Application.fetch_env!(:rift_ex, :test_account_id)
+        summoner_id = Application.fetch_env!(:rift_ex, :test_id)
         [
           client: Client.new(apikey, endpoint),
           account_name: account_name,
@@ -25,8 +25,8 @@ defmodule RiotApiClient.CassetteCase do
         ]
       end
 
-      def join_endpoint(rem_path) do
-        @base_url <> rem_path
+      def join_endpoint(rem_path, url \\ "") do
+        if String.length(url) > 0, do: url <> rem_path, else: @base_url <> rem_path
       end
 
     end
