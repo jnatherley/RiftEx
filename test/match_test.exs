@@ -1,5 +1,5 @@
 defmodule RiftExTest.Match do
-  import RiftEx.Match
+  import RiftEx.Match.V4
   use RiftEx.CassetteCase, async: false
 
   setup do
@@ -30,5 +30,7 @@ defmodule RiftExTest.Match do
       assert response.request_url == join_endpoint("/lol/match/v4/matchlists/by-account/#{ctx.account_id}")
     end
   end
+
+  ## No real way to test the other methods in this module.
 
 end
