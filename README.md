@@ -1,8 +1,8 @@
-# RiftEx
+# FaceITEx
 
-**RiftEx**
+**FaceITEx**
 
-An Elixir Client for RiotGames League of Leagues API. Heavily inspired by [Tentacat](https://github.com/edgurgel/tentacat). Documentation coming soon.
+An Elixir Client for FaceIT API. Heavily inspired by [Tentacat](https://github.com/edgurgel/tentacat). Documentation coming soon.
 
 ## Installation
 
@@ -12,7 +12,7 @@ by adding `rift_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:rift_ex, "~> 0.1.0"}
+    {:faceit_ex, "~> 0.1.0"}
   ]
 end
 ```

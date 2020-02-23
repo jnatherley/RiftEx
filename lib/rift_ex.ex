@@ -1,18 +1,19 @@
 defmodule RiftEx do
   alias RiftEx.Client
-  alias Poison
-  use HTTPoison.Base
+  alias Jason
 
-  @user_agent [{"User-agent", "RiftEx"}]
+  @user_agent []
 
   # Heavily inspired by Tentacat by edgurgel
   # https://github.com/edgurgel/tentacat
 
-  @spec process_response_body(binary) :: term
-  def process_response_body(""), do: nil
-  def process_response_body(body), do: Poison.decode!(body)
-  def process_response(%HTTPoison.Response{status_code: status_code, body: body} = resp),
-    do: {status_code, body, resp}
+  def process_response({:ok, %Mojito.Response{body: ""} = response}), do:
+    {:ok, %Mojito.Response{response|body: nil}}
+  def process_response({:ok, %Mojito.Response{body: body} = response}),
+    do: {:ok, %Mojito.Response{response|body: Jason.decode!(body)}}
+  # If error or no return
+  def process_response(response),
+    do: response
 
   def get(path, client \\ %Client{}, query_params, options) do
     request_url = url(client, client.endpoint <> path, query_params, options)
@@ -26,13 +27,20 @@ defmodule RiftEx do
     api_request(:post, request_url, body, authorization_header(client, @user_agent), [])
   end
 
+  def api_request(method, url, body \\ "", headers \\ [], options \\ [])
+  def api_request(:get, url, "", headers, options) do
+    Mojito.request(:get, url, headers, "", options)
+    |> process_response()
+  end
 
-  def api_request(method, url, body \\ "", headers, options \\ []) do
-    request!(method, url, Poison.encode!(body), headers, options)
+  def api_request(method, url, body, headers, options) do
+    Mojito.request(method, url, headers, Jason.encode!(body), options)
+    |> process_response()
   end
 
   def authorization_header(%Client{api_key: api_key}, headers \\ []) do
     headers ++ [{"X-Riot-Token", "#{api_key}"}]
+    |> IO.inspect
   end
 
   def url(client \\ %Client{}, path \\ "", params \\ [], options \\ [])

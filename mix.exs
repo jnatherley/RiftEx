@@ -30,11 +30,10 @@ defmodule RiftEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 3.1"},
-      {:httpoison, "~> 1.3.1"},
+      {:mojito, "~> 0.6.1"},
+      {:jason, "~> 1.1"},
       {:mix_test_watch, "~> 0.8", only: :dev, runtime: false, },
-      {:exvcr, "~> 0.10", only: [:test, :dev]},
-      {:toml, "~> 0.5.2", only: [:test]}
+      {:exvcr, "~> 0.10", only: [:test, :dev]}
     ]
   end
 

@@ -9,7 +9,6 @@ defmodule RiftEx.CassetteCase do
       @base_url Application.fetch_env!(:rift_ex, :endpoint)
 
       setup_all do
-        HTTPoison.start
         apikey = Application.fetch_env!(:rift_ex, :api_key)
         endpoint = @base_url
         account_name = Application.fetch_env!(:rift_ex, :test_account_name)
