@@ -45,7 +45,7 @@ defmodule RiftEx.MixProject do
       {:ex_doc, ">= 0.0.0"},
       {:mojito, "~> 0.6.1"},
       {:jason, "~> 1.1"},
-      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false, },
+      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
       {:exvcr, "~> 0.10", only: [:test, :dev]}
     ]
   end
