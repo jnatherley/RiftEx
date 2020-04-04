@@ -40,7 +40,6 @@ defmodule RiftEx do
 
   def authorization_header(%Client{api_key: api_key}, headers \\ []) do
     headers ++ [{"X-Riot-Token", "#{api_key}"}]
-    |> IO.inspect
   end
 
   def url(client \\ %Client{}, path \\ "", params \\ [], options \\ [])

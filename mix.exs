@@ -4,7 +4,7 @@ defmodule RiftEx.MixProject do
   def project do
     [
       app: :rift_ex,
-      version: "0.1.0",
+      version: "0.1.2",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
