@@ -10,9 +10,21 @@ defmodule RiftEx.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps(),
       aliases: aliases(),
+      description: "League of Legends API client",
+      package: package(),
+      licenses: "Apache 2.0",
+      links: nil,
       preferred_cli_env: [
         vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
       ]
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Joel Atherley"],
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => "https://github.com/jnatherley/riftex"}
     ]
   end
 
