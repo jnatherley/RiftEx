@@ -1,8 +1,8 @@
-# FaceITEx
+# RiftEx
 
-**FaceITEx**
+**RiftEx**
 
-An Elixir Client for FaceIT API. Heavily inspired by [Tentacat](https://github.com/edgurgel/tentacat). Documentation coming soon.
+An Elixir Client for League of Legends API. Heavily inspired by [Tentacat](https://github.com/edgurgel/tentacat). Documentation coming soon.
 
 ## Installation
 
