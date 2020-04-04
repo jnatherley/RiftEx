@@ -42,6 +42,7 @@ defmodule RiftEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0"},
       {:mojito, "~> 0.6.1"},
       {:jason, "~> 1.1"},
       {:mix_test_watch, "~> 0.8", only: :dev, runtime: false, },
