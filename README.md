@@ -12,7 +12,7 @@ by adding `rift_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:faceit_ex, "~> 0.1.0"}
+    {:rift_ex, "~> 0.1.0"}
   ]
 end
 ```
